@@ -1,0 +1,108 @@
+
+:root {
+    --font-size-default: 10px;
+    --primary-color: #101058;
+    --white-color: #fff;
+    --black-color: #000;
+    --gray-color: #d9d9d9;
+    --links-color: #3ab7ff;
+    --bg-links-color: #1971ff;
+    --bg-nav-header: #181441;
+}
+
+* {
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html {
+    font-size: var(--font-size-default);
+}
+
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header .nav {
+    background: var(--bg-nav-header);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 6rem;
+    padding: 0 4rem;
+}
+
+.nav .logo h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.nav .nav_links {
+    width: 50rem;
+    height: 100%;
+}
+
+.nav .nav_links ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+
+.nav .nav_links ul a {
+    font-weight: 800;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    color: var(--gray-color);
+}
+
+.nav .btn {
+    height: 100%;
+    width: 17rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn a:nth-child(1) {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    color: var(--links-color);
+    font-weight: 600;
+}
+
+.btn a:nth-child(1):hover {
+    text-decoration: underline;
+}
+
+.btn button {
+    padding: .8rem 2rem;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    border-radius: 1rem;
+    background: var(--bg-links-color);
+    color: var(--white-color);
+    transition: all .30s ease-in-out;
+}
+
+.btn button:hover {
+    background: var(--white-color);
+    color: var(--bg-links-color);
+    transform: scale(1.2);
+    box-shadow: 0 0 .5rem .2rem #1971ff;
+}
