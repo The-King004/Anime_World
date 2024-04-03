@@ -33,6 +33,9 @@ body {
     overflow-x: hidden;
 }
 
+/* ici on commence par le traitement du header */
+
+/* debut du traitement de la premiere partie du header */
 header .nav {
     background: var(--bg-nav-header);
     display: flex;
@@ -106,3 +109,5 @@ header .nav {
     transform: scale(1.2);
     box-shadow: 0 0 .5rem .2rem #1971ff;
 }
+
+/* fin */
